@@ -51,7 +51,7 @@ func startWebServer(cmd *cobra.Command, args []string) {
 	ctx, stop := signal.NotifyContext(context.Background(), syscall.SIGINT, syscall.SIGTERM)
 	defer stop()
 
-	engine := gin.Default()
+	engine := gin.New()
 	engine.Use(
 		gouno.RecoveryMiddleware(),
 		gouno.TimeoutMiddleware(),
