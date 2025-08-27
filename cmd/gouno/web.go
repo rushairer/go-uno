@@ -11,7 +11,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/rushairer/go-uno/gouno"
-	"github.com/rushairer/go-uno/internal/router"
+	"github.com/rushairer/go-uno/router"
 	"github.com/spf13/cobra"
 )
 
